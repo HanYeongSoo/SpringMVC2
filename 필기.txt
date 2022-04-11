@@ -44,7 +44,14 @@
 
 	.- @RequestMapping 은 URL 경로를 템플릿화 할 수 있는데, @PathVariable 을 사용하면 매칭 되는 부분을 편리하게 조회할 수 있다.
 
-	.- 
+2022-04-11
+4. 요청 매핑 - API 예시
+	.- 회원 관리 API
+		.- 회원 목록 조회: GET /users
+		.- 회원 등록: POST /users
+		.- 회원 조회: GET /users/{userId}
+		.- 회원 수정: PATCH /users/{userId}
+		.- 회원 삭제: DELETE /users/{userId}
 
 
 
