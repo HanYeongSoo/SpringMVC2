@@ -53,3 +53,19 @@ public class ResponseBodyController {
         return helloData;
     }
 }
+
+
+//  ByteArrayHttpMessageConverter : byte[] 데이터를 처리한다.
+//      클래스 타입: byte[] , 미디어타입: */* ,
+//      요청 예) @RequestBody byte[] data
+//      응답 예) @ResponseBody return byte[] 쓰기 미디어타입 application/octet-stream
+
+//  StringHttpMessageConverter : String 문자로 데이터를 처리한다.
+//      클래스 타입: String , 미디어타입: */*
+//        요청 예) @RequestBody String data
+//        응답 예) @ResponseBody return "ok" 쓰기 미디어타입 text/plain
+
+//  MappingJackson2HttpMessageConverter : application/json
+//      클래스 타입: 객체 또는 HashMap , 미디어타입 application/json 관련
+//        요청 예) @RequestBody HelloData data
+//        응답 예) @ResponseBody return helloData 쓰기 미디어타입 application/json 관련
