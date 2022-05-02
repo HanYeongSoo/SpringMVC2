@@ -66,6 +66,18 @@ public class ResponseBodyController {
 //        응답 예) @ResponseBody return "ok" 쓰기 미디어타입 text/plain
 
 //  MappingJackson2HttpMessageConverter : application/json
-//      클래스 타입: 객체 또는 HashMap , 미디어타입 application/json 관련
-//        요청 예) @RequestBody HelloData data
-//        응답 예) @ResponseBody return helloData 쓰기 미디어타입 application/json 관련
+//      클래스 타입: 객체ArgumentResolvereturn helloData 쓰기 미디어타입 application/json 관련
+
+
+/**
+ *  ArgumentResolver : 여러 어노테이션을 처리해주는 리졸버
+ *  RequestMappingHandlerAdaptor : 애노테이션 기반의 컨트롤러를 처리해주는 어댑터
+ *  어댑터 > 리졸버로 호출
+ *
+ *  ReturnValueHandler : HandlerMethodReturnValueHandler 를 줄여서 ReturnValueHandler 라 부른다.
+ *                       ArgumentResolver 와 비슷한데, 이것은 응답 값을 변환하고 처리한다.
+ *
+ *
+ *
+ *
+ */
